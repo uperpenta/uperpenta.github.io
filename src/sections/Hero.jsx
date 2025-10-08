@@ -1,6 +1,10 @@
+import About from "./About";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { use, useRef } from "react";
+
 export default function Hero() {
   return (
-    <section className="py-6 px-6 md:px-12 lg:px-20 max-w-6xl mx-auto flex flex-row justify-between pt-30">
+    <section className="py-6  max-w-6xl mx-auto flex flex-row justify-between pt-30">
       {/*Brief Introduction Sectin  */}
       <div className="flex-col">
         <h3 className="text-red-800 font-bold ">Full-Stack Engineer</h3>
@@ -17,8 +21,7 @@ export default function Hero() {
           <button>LinkedIn</button>
         </div>
       </div>
-      {/* IFrame for preview of "About" Section */}
-      <div>lold</div>
+      {/* Expanding Div */}
     </section>
   );
 }
