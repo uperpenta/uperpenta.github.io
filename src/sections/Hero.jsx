@@ -14,7 +14,7 @@ export default function Hero() {
         <p className="text-gray-400 text-xl pt-3">
           Hi, I’m Rares, a full-stack engineer with a background in Cloud and
           DevOps, with a passion for building clean and maintainable
-          solutions...
+          solutions
         </p>
         <div className="pt-3">
           <button>GitHub</button>
