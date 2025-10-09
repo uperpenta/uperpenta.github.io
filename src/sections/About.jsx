@@ -40,17 +40,25 @@ export default function About() {
   ];
 
   return (
-    <div className="py-6 max-w-6xl mx-auto flex flex-col justify-between pt-30 bg-gray-800 rounded-lg">
-      <div className="flex-col flex mb-6">
-        <h3 className="text-gray-500 font-bold">About</h3>
-        <p className="text-white">
+    <div className=" max-w-7xl mx-auto flex flex-col justify-between bg-aboutbg rounded-2xl min-h-[80vh]">
+      <div
+        className=" flex-col flex mx-auto my-[60px] pl-2 pr-6"
+        style={{
+          marginLeft:
+            "calc(var(--skill-index-margin) + var(--skill-index-width))",
+        }}
+      >
+        <h3 className="text-aboutgrey font-inter font-bold">About</h3>
+        <p className="text-white font-inter font-bold text-3xl">
           My work is about harmony — between creativity and logic, structure and
-          spontaneity. I believe great engineering is like music: it thrives on
-          rhythm, adaptability, and flow.
+          spontaneity. I believe great engineering is like music: it thrives on{" "}
+          <span className="text-rhythm">rhythm</span>,{" "}
+          <span className="text-adaptability">adaptability</span>, and{" "}
+          <span className="text-flow">flow</span>.
         </p>
       </div>
 
-      <div className="flex flex-col bg-gray-600 rounded-lg divide-y divide-gray-700">
+      <div className="flex flex-col bg-aboutbg2 rounded-2xl m-2 sm:m-4 mt-auto">
         <SkillSection
           index={1}
           title="Full-Stack Development"
@@ -58,6 +66,7 @@ export default function About() {
           skills={fullstackSkills}
           iconSrc="src/assets/photos/fullstack-icon.svg"
         />
+        <div className="h-[1px] ml-4 mr-4 divide-y bg-aboutdivide mx-auto"></div>
         <SkillSection
           index={2}
           title="DevOps & Cloud"
@@ -65,6 +74,7 @@ export default function About() {
           skills={devopsSkills}
           iconSrc="src/assets/photos/cloud-icon.svg"
         />
+        <div className="h-[1px] ml-4 mr-4 divide-y bg-aboutdivide mx-auto"></div>
         <SkillSection
           index={3}
           title="System Architecture"

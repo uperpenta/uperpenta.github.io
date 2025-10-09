@@ -1,1 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-comfortaa: "Comfortaa", cursive;
+  --font-nunito: "Nunito", sans-serif;
+  --font-inter: "Inter" sans-serif;
+  --color-darkred: #c44141;
+  --font-playfair: "Playfair Display", serif;
+  --color-aboutbg: #201f1f;
+  --color-aboutbg2: #323030;
+  --color-aboutbadge: #5e5c5c;
+  --color-aboutdivide: #4f4e4e;
+  --color-aboutgrey: #5e5e5e;
+  --color-rhythm: #55a441;
+  --color-adaptability: #6096c8;
+  --color-flow: #c24786;
+}
+
+:root {
+  --skill-index-margin: 1rem; /* ml-4 */
+  --skill-index-width: 16.6667%; /* w-2/12 */
+}
