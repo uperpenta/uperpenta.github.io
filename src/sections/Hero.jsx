@@ -1,6 +1,7 @@
 import About from "./About";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { use, useRef } from "react";
+import HeroButtons from "../components/HeroButtons";
 
 export default function Hero() {
   return (
@@ -18,12 +19,7 @@ export default function Hero() {
           DevOps, with a passion for building clean and maintainable solutions
         </p>
         <div className="pt-3 flex flex-row gap-3">
-          <button className="w-28 h-8 rounded-full bg-darkred text-white font-nunito font-extrabold items-center">
-            GitHub
-          </button>
-          <button className="w-28 h-8 rounded-full border-2 bg-white text-black font-nunito font-extrabold items-center">
-            LinkedIn
-          </button>
+          <HeroButtons></HeroButtons>
         </div>
       </div>
       {/* Expanding Div */}

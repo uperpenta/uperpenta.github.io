@@ -7,7 +7,9 @@ export default function App() {
     <>
       <div className="bg-white min-h-screen">
         <Header></Header>
+        <div className="h-20"></div>
         <Hero></Hero>
+        <div className="h-20"></div>
         <About></About>
       </div>
     </>
