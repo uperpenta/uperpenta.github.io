@@ -1,5 +1,8 @@
 import React from "react";
 import SkillSection from "/src/components/SkillSection";
+import  fullstackIcon from "/src/assets/photos/fullstack-icon.svg";
+import cloudIcon from "/src/assets/photos/cloud-icon.svg";
+import apiIcon from "/src/assets/photos/api-icon.svg";
 
 export default function About() {
   const fullstackSkills = [
@@ -64,7 +67,7 @@ export default function About() {
           title="Full-Stack Development"
           description="Translating ideas into functional, maintainable products — combining logic and creativity to deliver seamless user experiences from backend to frontend."
           skills={fullstackSkills}
-          iconSrc="src/assets/photos/fullstack-icon.svg"
+          iconSrc={fullstackIcon}
         />
         <div className="h-[1px] ml-4 mr-4 divide-y bg-aboutdivide mx-auto"></div>
         <SkillSection
@@ -72,7 +75,7 @@ export default function About() {
           title="DevOps & Cloud"
           description="Bridging development and operations to deliver automation, reliability, and continuous improvement through resilient infrastructure and tooling."
           skills={devopsSkills}
-          iconSrc="src/assets/photos/cloud-icon.svg"
+          iconSrc={cloudIcon}
         />
         <div className="h-[1px] ml-4 mr-4 divide-y bg-aboutdivide mx-auto"></div>
         <SkillSection
@@ -80,7 +83,7 @@ export default function About() {
           title="System Architecture"
           description="Designing and structuring systems that connect technology with purpose — ensuring performance, scalability, and clean design across every project."
           skills={architectureSkills}
-          iconSrc="src/assets/photos/api-icon.svg"
+          iconSrc={apiIcon}
         />
       </div>
     </div>
