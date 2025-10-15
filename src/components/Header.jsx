@@ -1,21 +1,26 @@
 export default function Header() {
+
+  const scrollTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
-    <header className="fixed w-full z-40 top-0 bg-white">
+    <header className="sticky w-full z-40 top-0 bg-white">
       <nav className="py-6 max-w-7xl mx-auto flex justify-between">
-        <div className="flex flex-col text-left leading-tight">
-          <h3 className="text-black font-extrabold font-comfortaa">
+        <div onClick={() => scrollToSection(topRef)} className="flex flex-col text-left leading-tight cursor-pointer">
+          <h3  className="text-black font-black font-comfortaa">
             Rares-Andrei Ialomiteanu
           </h3>
           <h3 className="font-comfortaa text-gray-400">Bucharest, Romania</h3>
         </div>
         <div className="flex flex-row justify-between space-x-20">
-          <button className="text-black font-extrabold font-comfortaa">
+          <button onClick={() => scrollTo("about")} className="text-black font-black font-comfortaa cursor-pointer">
             About
           </button>
-          <button className="text-black font-extrabold font-comfortaa">
+          <button onClick={() => scrollTo("projects")} className="text-black font-black font-comfortaa cursor-pointer">
             Projects
           </button>
-          <button className="text-black font-extrabold font-comfortaa">
+          <button onClick={() => scrollTo("contact")} className="text-black font-black font-comfortaa cursor-pointer">
             Get in touch
           </button>
         </div>
