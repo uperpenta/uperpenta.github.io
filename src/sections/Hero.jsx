@@ -6,7 +6,7 @@ import asciianimation from "/src/assets/photos/ascii-animation.gif";
 
 export default function Hero() {
   return (
-    <section className="py-6 max-w-7xl mx-auto flex flex-row justify-between pt-30">
+    <section className="py-6 max-w-7xl mx-auto flex flex-row justify-between pt-20">
       <div className="flex-col mr-auto w-147">
         <h3 className="text-darkred font-bold font-nunito text-xl">
           Full-Stack Engineer
@@ -22,7 +22,7 @@ export default function Hero() {
           <HeroButtons></HeroButtons>
         </div>
       </div>
-      <img src={asciianimation} alt="ascii animation" className="w-1/2 rounded-xl" />
+      <img src={asciianimation} alt="ascii animation" className="w-1/2 rounded-xl h-auto max-h-[400px] " />
     </section>
   );
 }
