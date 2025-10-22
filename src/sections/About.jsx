@@ -2,7 +2,7 @@ import React from "react";
 import SkillSection from "/src/components/SkillSection";
 import  fullstackIcon from "/src/assets/photos/fullstack-icon.svg";
 import cloudIcon from "/src/assets/photos/cloud-icon.svg";
-import apiIcon from "/src/assets/photos/api-icon.svg";
+import paintIcon from "/src/assets/photos/paint.svg";
 
 export default function About() {
   const fullstackSkills = [
@@ -35,11 +35,9 @@ export default function About() {
     "Automation",
   ];
 
-  const architectureSkills = [
-    "Scalability & Performance",
-    "API Design",
-    "Clean Architecture",
-    "System Design",
+  const designSkills = [
+    "Figma",
+    "Photoshop",
   ];
 
   return (
@@ -65,7 +63,7 @@ export default function About() {
         <SkillSection
           index={1}
           title="Full-Stack Development"
-          description="Translating ideas into functional, maintainable products — combining logic and creativity to deliver seamless user experiences from backend to frontend."
+          description="Translating ideas into functional, maintainable products, combining logic and creativity to deliver seamless user experiences from backend to frontend."
           skills={fullstackSkills}
           iconSrc={fullstackIcon}
         />
@@ -80,10 +78,10 @@ export default function About() {
         <div className="h-[1px] ml-4 mr-4 divide-y bg-aboutdivide mx-auto"></div>
         <SkillSection
           index={3}
-          title="System Architecture"
-          description="Designing and structuring systems that connect technology with purpose — ensuring performance, scalability, and clean design across every project."
-          skills={architectureSkills}
-          iconSrc={apiIcon}
+          title="UI/UX Design"
+          description="Designing user interfaces that are both functional and visually appealing, ensuring a seamless and enjoyable user experience."
+          skills={designSkills}
+          iconSrc={paintIcon}
         />
       </div>
     </div>
