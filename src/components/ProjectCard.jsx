@@ -1,5 +1,6 @@
 import figma from "/src/assets/photos/figma.svg";
 import github from "/src/assets/photos/github.svg";
+import site from "/src/assets/photos/site.svg";
 
 export default function ProjectCard({
   imageSrc,
@@ -8,9 +9,10 @@ export default function ProjectCard({
   technologies,
   GitHubLink,
   FigmaLink,
+  SiteLink,
 }) {
   return (
-    <div className="bg-aboutbg2 rounded-lg border 2xl:p-1 w-100 relative overflow-hidden font-comfortaa flex flex-col">
+    <div className="bg-aboutbg2 rounded-lg border h-[500px] 2xl:p-1 w-100 relative overflow-hidden font-comfortaa flex flex-col">
       {/* Image Section */}
       <div className="border-[12px] border-aboutbg2 rounded-2xl bg-white">
         <div className="h-[107px] w-[175px] mx-auto py-4">
@@ -62,8 +64,21 @@ export default function ProjectCard({
                 </a>
               </div>
             )}
-          </div>
 
+            {SiteLink && (
+              <div className="flex flex-row gap-1">
+                <img className="w-5" src={site}></img>
+                <a
+                  href={SiteLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white font-semibold underline hover:text-gray-300 transition-colors"
+                >
+                  Site
+                </a>
+              </div>
+            )}
+          </div>
           <p className="text-gray-400 font-extralight h-1/7">{technologies}</p>
         </div>
       </div>
