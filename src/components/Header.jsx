@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky w-full z-40 top-0 bg-white">
+    <header className="fixed w-full z-40 top-0 bg-white">
       <nav className="py-6 max-w-7xl mx-auto flex justify-between">
         <div
           onClick={() => scrollTo("hero", 20)}
