@@ -1,3 +1,5 @@
+import cvPDF from "/src/assets/photos/CV_NOIEMBRIE_25.pdf";
+
 export default function Header() {
   const scrollTo = (id, offset = 0) => {
     const element = document.getElementById(id);
@@ -15,7 +17,7 @@ export default function Header() {
     <header className="fixed w-full z-40 top-0 bg-white">
       <nav className="py-6 max-w-7xl mx-auto flex justify-between">
         <div
-          onClick={() => scrollTo("hero", 20)}
+          onClick={() => window.open(cvPDF, "_blank")}
           className="flex flex-col text-left leading-tight cursor-pointer"
         >
           <h3 className="text-black font-black font-comfortaa">
