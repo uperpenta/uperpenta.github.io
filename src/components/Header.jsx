@@ -1,18 +1,6 @@
 import cvPDF from "/src/assets/photos/CV_NOIEMBRIE_25.pdf";
 
-export default function Header() {
-  const scrollTo = (id, offset = 0) => {
-    const element = document.getElementById(id);
-    if (!element) return;
-
-    const top = element.getBoundingClientRect().top + window.scrollY - offset;
-
-    window.scrollTo({
-      top,
-      behavior: "smooth",
-    });
-  };
-
+export default function Header({onAboutClick, onProjectsClick, onContactClick}) {
   return (
     <header className="fixed w-full z-40 top-0 bg-white">
       <nav className="py-6 max-w-7xl mx-auto flex justify-between">
@@ -27,19 +15,19 @@ export default function Header() {
         </div>
         <div className="flex flex-row justify-between space-x-20">
           <button
-            onClick={() => scrollTo("about", 100)}
+            onClick={onAboutClick}
             className="text-black font-black font-comfortaa cursor-pointer"
           >
             About
           </button>
           <button
-            onClick={() => scrollTo("projects", 20)}
+            onClick={onProjectsClick}
             className="text-black font-black font-comfortaa cursor-pointer"
           >
             Projects
           </button>
           <button
-            onClick={() => scrollTo("contact", 20)}
+            onClick={onContactClick}
             className="text-black font-black font-comfortaa cursor-pointer"
           >
             Get in touch
