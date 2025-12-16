@@ -16,18 +16,30 @@ export default function Contact() {
           </div>
           <div className="md:w-1/2 flex flex-col gap-6">
             {[
-              { name: "Email", value: "i.raresandrei@yahoo.com" },
-              { name: "GitHub", value: "github.com/uperpenta" },
+              {
+                name: "Email",
+                label: "i.raresandrei@yahoo.com",
+                href: "mailto:i.raresandrei@yahoo.com",
+              },
+              {
+                name: "GitHub",
+                label: "github.com/uperpenta",
+                href: "https://github.com/uperpenta",
+              },
               {
                 name: "LinkedIn",
-                value: "linkedin.com/in/rares-andrei-ialomiteanu-269988251/",
+                label: "linkedin.com/in/rares-andrei-ialomiteanu-269988251/",
+                href: "https://linkedin.com/in/rares-andrei-ialomiteanu-269988251/",
               },
             ].map((item, index) => (
-              <div
+              <a
                 key={item.name}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex items-center justify-between border border-gray-200 rounded-xl px-6 py-5
-                           transform transition-all duration-300
-                           hover:-translate-y-1 hover:shadow-lg"
+                 transform transition-all duration-300
+                 hover:-translate-y-1 hover:shadow-lg cursor-pointer"
                 style={{ transitionDelay: `${index * 80}ms` }}
               >
                 <span className="font-nunito font-bold text-lg text-black">
@@ -35,9 +47,9 @@ export default function Contact() {
                 </span>
 
                 <span className="text-darkred font-nunito opacity-80 group-hover:opacity-100 transition">
-                  {item.value}
+                  {item.label}
                 </span>
-              </div>
+              </a>
             ))}
           </div>
         </div>
