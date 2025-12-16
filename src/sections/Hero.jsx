@@ -1,6 +1,3 @@
-import About from "./About";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { use, useRef } from "react";
 import HeroButtons from "../components/HeroButtons";
 import asciianimation from "/src/assets/photos/ascii-animation.gif";
 

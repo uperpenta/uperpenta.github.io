@@ -36,13 +36,13 @@ export default function App() {
             </div>
           </section>
 
-          <section ref={projectsRef} className="snap-start h-screen">
+          <section ref={projectsRef} className="snap-start">
             <div className="pt-15">
               <Projects />
             </div>
           </section>
 
-          <section ref={contactRef} className="snap-start h-screen">
+          <section ref={contactRef} className="snap-start h-screen mt-32">
             <div className="pt-15">
               <Contact />
             </div>
