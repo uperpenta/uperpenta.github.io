@@ -6,11 +6,11 @@ import kano from "/src/assets/photos/kano.png";
 
 export default function Projects() {
   return (
-    <div className="py-6 max-w-7xl mx-auto pt-20">
-      <h3 className="text-aboutbg font-bold font-nunito text-3xl pb-6">
+    <div className="max-w-7xl mx-auto px-4 lg:px-6">
+      <h3 className="text-aboutbg font-bold font-nunito text-2xl md:text-3xl pb-4 md:pb-6">
         Projects
       </h3>
-      <div className="flex flex-wrap justify-between gap-6">
+      <div className="flex flex-wrap justify-center sm:justify-between gap-4 md:gap-6">
         <ProjectCard
           imageSrc={roomm8s}
           text="ROOM M8S (WIP)"

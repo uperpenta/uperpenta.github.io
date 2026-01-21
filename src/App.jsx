@@ -23,27 +23,27 @@ export default function App() {
           onContactClick={() => scrollToSection(contactRef)}
         />
 
-        <div className="h-screen overflow-y-auto snap-y snap-proximity scroll-smooth">
-          <section className="snap-start h-screen">
-            <div className="py-40">
+        <div className="h-screen overflow-y-auto md:snap-y md:snap-proximity scroll-smooth">
+          <section className="md:snap-start md:min-h-screen">
+            <div className="pt-20 md:pt-40 pb-4 md:pb-20">
               <Hero />
             </div>
           </section>
 
-          <section ref={aboutRef} className="snap-start h-screen">
-            <div className="py-30">
+          <section ref={aboutRef} className="md:snap-start md:min-h-screen">
+            <div className="py-4 md:py-20">
               <About />
             </div>
           </section>
 
-          <section ref={projectsRef} className="snap-start">
-            <div className="pt-15">
+          <section ref={projectsRef} className="md:snap-start">
+            <div className="py-4 md:py-15">
               <Projects />
             </div>
           </section>
 
-          <section ref={contactRef} className="snap-start h-screen mt-32">
-            <div className="pt-15">
+          <section ref={contactRef} className="md:snap-start md:min-h-screen mt-4 md:mt-20">
+            <div className="py-4 md:py-15">
               <Contact />
             </div>
           </section>

@@ -41,16 +41,14 @@ export default function About() {
   ];
 
   return (
-    <div className=" max-w-7xl mx-auto flex flex-col justify-between bg-aboutbg rounded-2xl">
-      <div
-        className=" flex-col flex mx-auto my-[60px] pl-2 mr-18 text-justify"
+    <div className="max-w-7xl mx-4 lg:mx-auto flex flex-col justify-between bg-aboutbg rounded-2xl">
+      <div className="flex-col flex mx-auto my-4 md:my-[60px] px-4 md:pl-2 md:mr-18 text-justify md:text-left"
         style={{
-          marginLeft:
-            "calc(var(--skill-index-margin) + var(--skill-index-width))",
+          marginLeft: "auto",
         }}
       >
-        <h3 className="text-aboutgrey font-inter font-bold">About</h3>
-        <p className="text-white font-inter font-bold text-3xl ">
+        <h3 className="text-aboutgrey font-inter font-bold text-sm md:text-base">About</h3>
+        <p className="text-white font-inter font-bold text-xl sm:text-2xl md:text-3xl max-w-4xl">
           My work is about harmony — between creativity and logic, structure and
           spontaneity. I believe great engineering is like music: it thrives on{" "}
           <span className="text-rhythm">rhythm</span>,{" "}
@@ -59,7 +57,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className="flex flex-col bg-aboutbg2 rounded-2xl m-2 sm:m-4 mt-auto text-justify">
+      <div className="flex flex-col bg-aboutbg2 rounded-2xl m-2 sm:m-4 mt-auto text-left">
         <SkillSection
           index={1}
           title="Full-Stack Development"
