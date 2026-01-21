@@ -24,13 +24,13 @@ export default function App() {
         />
 
         <div className="h-screen overflow-y-auto md:snap-y md:snap-proximity scroll-smooth">
-          <section className="md:snap-start md:min-h-screen">
+          <section className="md:snap-start">
             <div className="pt-20 md:pt-40 pb-4 md:pb-20">
               <Hero />
             </div>
           </section>
 
-          <section ref={aboutRef} className="md:snap-start md:min-h-screen">
+          <section ref={aboutRef} className="md:snap-star">
             <div className="py-4 md:py-20">
               <About />
             </div>
@@ -42,7 +42,7 @@ export default function App() {
             </div>
           </section>
 
-          <section ref={contactRef} className="md:snap-start md:min-h-screen mt-4 md:mt-20">
+          <section ref={contactRef} className="md:snap-start  mt-4 md:mt-20">
             <div className="py-4 md:py-15">
               <Contact />
             </div>
