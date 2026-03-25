@@ -6,7 +6,17 @@ const sections = ["home", "storyInfo", "worksInfo", "contactInfo"];
 
 export default function SectionNav() {
   const [current, setCurrent] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const mql = window.matchMedia("(max-width: 767px)");
+    const update = () => setIsMobile(mql.matches);
+    update();
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, []);
+
+  /* ── track current section (desktop nav) ── */
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -27,6 +37,9 @@ export default function SectionNav() {
 
     return () => observer.disconnect();
   }, []);
+
+  /* Hide entirely on mobile */
+  if (isMobile) return null;
 
   const isFirst = current === 0;
   const isLast = current === sections.length - 1;

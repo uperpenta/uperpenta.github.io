@@ -119,7 +119,7 @@ export default function Home() {
       {/* ===== ABOUT / STORY SECTION ===== */}
       <section
         id="storyInfo"
-        className="pt-32 pb-24 md:pb-48 px-6 md:px-24 max-w-7xl mx-auto"
+        className="pt-16 md:pt-32 pb-24 md:pb-48 px-6 md:px-24 max-w-7xl mx-auto"
       >
         <div className="mb-24">
           <span className="font-label uppercase tracking-widest text-[0.75rem] text-primary-container mb-4 block">
@@ -209,7 +209,7 @@ export default function Home() {
         </div>
 
         {/* Narrative Block */}
-        <div className="mt-24 md:mt-32 flex flex-col md:flex-row gap-12 md:gap-16 items-start">
+        <div className="mt-12 md:mt-32 flex flex-col md:flex-row gap-12 md:gap-16 items-start">
           <div className="w-full md:w-1/2">
             <ParticleConstellation />
           </div>
@@ -347,7 +347,7 @@ export default function Home() {
         </div>
 
         {/* Social links - mobile only */}
-        <div className="w-full mt-16 flex flex-col gap-6 lg:hidden">
+        <div className="w-full mt-8 flex flex-col gap-6 lg:hidden">
           {[
             {
               icon: "alternate_email",

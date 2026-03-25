@@ -60,7 +60,14 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <ResumeViewer />
+          <a
+            href="/CV.pdf"
+            download
+            onClick={() => setMobileOpen(false)}
+            className="font-headline uppercase tracking-widest text-[0.75rem] text-primary-container border border-outline-variant px-4 py-2 hover:bg-primary-container hover:text-on-primary transition-all duration-300"
+          >
+            RESUME
+          </a>
         </div>
       )}
     </header>

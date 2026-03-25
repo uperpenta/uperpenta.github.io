@@ -6,7 +6,7 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col items-center gap-4 border-t border-outline-variant/20 bg-surface py-20">
+    <footer className="w-full flex flex-col items-center gap-4 border-t border-outline-variant/20 bg-surface py-10 md:py-20">
       <div className="flex gap-8 md:gap-12 mb-4">
         {footerLinks.map((link) => (
           <a
