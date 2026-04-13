@@ -8,25 +8,18 @@ import ContactForm from "./components/ContactForm";
 const projects = [
   {
     number: "01",
-    title: "REAL_TIME_COLLABORATIVE_EDITOR",
+    title: "SPOTLIGHT",
     description:
-      "A Google Docs-style collaborative editor using CRDTs for conflict-free real-time sync, featuring multi-user cursors, rich text editing with Quill, and WebSocket collaboration. Type-safe APIs with tRPC, Drizzle ORM for PostgreSQL, and self-hosted storage with MinIO.",
-    tags: [
-      "NEXT.JS",
-      "TYPESCRIPT",
-      "Y-SWEET/YJS",
-      "TRPC",
-      "POSTGRESQL",
-      "BETTER_AUTH",
-    ],
-    imageSrc: "/collaborative-editor.png",
-    imageAlt: "Real-time collaborative editor application screenshot",
+      "A reverse job marketplace where junior and mid-level developers in Romania build customizable portfolio pages showcasing real projects and authentic stories instead of generic CVs. Recruiters create roles and get AI-matched candidate queues ranked by relevance, paying per contact reveal while candidates use it for free. Romania first, then CEE and global — positioning as the anti-ATS platform where proof of work beats keyword matching.",
+    tags: ["WIP"],
+    imageSrc: "/spotlight.png",
+    imageAlt: "Spotlight reverse job marketplace design mockup",
     aspect: "aspect-video",
     size: "large" as const,
     links: [
       {
-        type: "github" as const,
-        href: "https://github.com/uperpenta/rt-editor",
+        type: "figma" as const,
+        href: "https://www.figma.com/design/w6O8CQUMXCorkhRECwIOfq/Recruiter-platform?m=auto&t=ADReQvhow7lue9Rv-6",
       },
     ],
   },

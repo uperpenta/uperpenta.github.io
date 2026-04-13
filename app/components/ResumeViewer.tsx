@@ -37,7 +37,7 @@ export default function ResumeViewer({ pdfSrc = "/CV.pdf" }: ResumeViewerProps) 
       {/* Modal overlay — portaled to body so it sits above everything */}
       {open && createPortal(
         <div
-          className="fixed inset-0 z-[100] overflow-y-auto bg-black/85 backdrop-blur-sm"
+          className="fixed inset-0 z-100 overflow-y-auto bg-black/85 backdrop-blur-sm"
           onClick={(e) => {
             if (e.target === e.currentTarget) close();
           }}
